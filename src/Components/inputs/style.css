@@ -1,0 +1,33 @@
+.title{
+    color: goldenrod;
+}
+
+.input{
+    
+        color: red;
+        font-size: x-large;
+        width: 70%;
+        height: 1em;
+        border: 2px solid goldenrod;
+        border-radius: 17px;
+        text-align: center;
+        margin:0 0 1em 1em;
+}
+
+.btn{
+    width: 10em;
+    height: 1.4em;
+    background: goldenrod;
+    border: gold 1px solid;
+    color: #091464;
+    font-size: 19px;
+    border-radius: 1em;
+}
+.btnDisable{
+    width: 10em;
+    height: 1.4em;
+    border: gold 1px solid;
+    color: #091464;
+    font-size: 19px;
+    border-radius: 1em;
+}
