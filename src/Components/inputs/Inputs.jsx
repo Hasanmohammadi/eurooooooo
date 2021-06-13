@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+
 const Inputs = (userId) => {
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
@@ -112,7 +113,7 @@ const Inputs = (userId) => {
         <input type="number" onChange={getValueOfSixTeam} className={"input"} />
       </div>
       <br />
-      {FirstTeam === "" || secondTeam === "" ? (
+      {FirstTeam === "" || secondTeam === "" || ThirdTeam==="" || FourthTeam==="" || FifthTeam==="" || SixTeam==="" ? (
         <button className={"btnDisable"} disabled>
           ثبت
         </button>

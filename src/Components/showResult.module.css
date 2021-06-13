@@ -1,0 +1,34 @@
+.container{
+    width: 80%;
+    margin: auto;
+    border: 1px solid goldenrod;
+    margin-top: 3em;
+}
+.personContainer{
+    display: flex;
+    color: goldenrod;
+    justify-content: space-evenly;
+    border-bottom: 1px solid goldenrod;
+}
+.divName{
+    width: 30%;
+    border-right: 1px solid goldenrod;
+    padding: 9px 3px;
+
+}
+.firstTeamDiv{
+    width: 30%;
+    padding: 9px 3px;
+
+}
+.secondTeamDiv{
+    width: 30%;
+    border-left: 1px solid goldenrod;
+    padding: 9px 3px;
+
+}
+
+.h1{
+    color: hotpink;
+    font-family: cursive;
+}

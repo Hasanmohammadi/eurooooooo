@@ -13,6 +13,7 @@ const Table = (userOn) => {
         .then((data) => {
           const finalData = data.users.sort((a, b) => b.point - a.point);
           setPersons(finalData);
+         
         });
     };
 
