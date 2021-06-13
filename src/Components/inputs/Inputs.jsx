@@ -3,6 +3,10 @@ import "./style.css";
 const Inputs = (userId) => {
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
+  const [ThirdTeam, setThirdTeam] = useState("");
+  const [FourthTeam, setFourthTeam] = useState("");
+  const [FifthTeam, setFifthTeam] = useState("");
+  const [SixTeam, setSixTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
   console.log(finalScore);
 
@@ -12,11 +16,27 @@ const Inputs = (userId) => {
   const getValueOfSecondTeam = (e) => {
     setsecondTeam(e.target.value);
   };
+  const getValueOfThirdTeam = (e) => {
+    setThirdTeam(e.target.value);
+  };
+  const getValueOfFourthTeam = (e) => {
+    setFourthTeam(e.target.value);
+  };
+  const getValueOfFifthTeam = (e) => {
+    setFifthTeam(e.target.value);
+  };
+  const getValueOfSixTeam = (e) => {
+    setSixTeam(e.target.value);
+  };
 
   const onSubmit = () => {
     const score = {
-      firstTeam: FirstTeam,
-      lastTeam: secondTeam,
+      England: FirstTeam,
+      Croatia: secondTeam,
+      Netherlands: ThirdTeam,
+      Ukraine: FourthTeam,
+      Austria: FifthTeam,
+      Macedonia: SixTeam,
     };
 
     fetch(
@@ -30,31 +50,67 @@ const Inputs = (userId) => {
     });
 
     setfinalScore({
-      firstTeam: FirstTeam,
-      lastTeam: secondTeam,
+      England: FirstTeam,
+      Croatia: secondTeam,
+      Netherlands: ThirdTeam,
+      Ukraine: FourthTeam,
+      Austria: FifthTeam,
+      Macedonia: SixTeam,
     });
   };
 
   return (
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
-      <label className={"title"}>
-        England
-        <input
-          type="number"
-          onChange={getValueOfFirstTeam}
-          className={"input"}
-        />
-      </label>
-      <br />
-      <label className={"title"}>
-        Croatia
+      <div>
+        <label className={"title"}>
+          England | انگلیس
+          <input
+            type="number"
+            onChange={getValueOfFirstTeam}
+            className={"input"}
+          />
+        </label>
+        <br />
+        <label className={"title"}>Croatia | کرواسی</label>
         <input
           type="number"
           onChange={getValueOfSecondTeam}
           className={"input"}
         />
-      </label>
+      </div>
+      <hr />
+      <div>
+        <label className={"title"}>
+          Netherlands | هلند
+          <input
+            type="number"
+            onChange={getValueOfThirdTeam}
+            className={"input"}
+          />
+        </label>
+        <br />
+        <label className={"title"}>Ukraine | اکراین</label>
+        <input
+          type="number"
+          onChange={getValueOfFourthTeam}
+          className={"input"}
+        />
+      </div>
+      <hr />
+      <div>
+        <label className={"title"}>
+          Austria | اتریش
+          <input
+            type="number"
+            onChange={getValueOfFifthTeam}
+            className={"input"}
+          />
+        </label>
+        <br />
+        <label className={"title"}>Macedonia | مقدونیه</label>
+        <input type="number" onChange={getValueOfSixTeam} className={"input"} />
+      </div>
       <br />
       {FirstTeam === "" || secondTeam === "" ? (
         <button className={"btnDisable"} disabled>
