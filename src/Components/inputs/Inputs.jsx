@@ -39,7 +39,7 @@ const Inputs = (userId) => {
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
       <label className={"title"}>
-        English
+        England
         <input
           type="number"
           onChange={getValueOfFirstTeam}
