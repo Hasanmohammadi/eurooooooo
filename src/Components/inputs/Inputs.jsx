@@ -39,7 +39,7 @@ const Inputs = (userId) => {
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
       <label className={"title"}>
-        team1
+        English
         <input
           type="number"
           onChange={getValueOfFirstTeam}
@@ -48,7 +48,7 @@ const Inputs = (userId) => {
       </label>
       <br />
       <label className={"title"}>
-        team2
+        Croatia
         <input
           type="number"
           onChange={getValueOfSecondTeam}
