@@ -51,12 +51,12 @@ const Inputs = (userId) => {
     });
 
     setfinalScore({
-      England: FirstTeam,
-      Croatia: secondTeam,
-      Netherlands: ThirdTeam,
-      Ukraine: FourthTeam,
-      Austria: FifthTeam,
-      Macedonia: SixTeam,
+      Scotland: FirstTeam,
+      CzechRepublic : secondTeam,
+      Poland: ThirdTeam,
+      Slovakia: FourthTeam,
+      Spain: FifthTeam,
+      Sweden: SixTeam,
     });
   };
 
