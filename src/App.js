@@ -1,9 +1,7 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Inputs from './Components/inputs/Inputs';
 import Table from './Components/table/Table';
-import { useState } from 'react';
-import { useEffect } from 'react';
 import convertId from './convert';
 
 function App() {

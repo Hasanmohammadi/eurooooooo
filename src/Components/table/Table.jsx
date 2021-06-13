@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PersonInfo from "./PersonInfo";
-
 import style from "./style.module.css";
+
 
 const Table = (userOn) => {
   const [persons, setPersons] = useState([]);

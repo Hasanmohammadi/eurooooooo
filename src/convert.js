@@ -70,4 +70,5 @@ export default function convertId(id) {
         default:
            
     }
+    console.log(newId);
 }

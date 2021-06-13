@@ -4,6 +4,7 @@ const Inputs = (userId) => {
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
+  console.log(finalScore);
 
   const getValueOfFirstTeam = (e) => {
     setFirstTeam(e.target.value);
