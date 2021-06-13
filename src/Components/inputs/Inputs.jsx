@@ -65,7 +65,7 @@ const Inputs = (userId) => {
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
       <div>
         <label className={"title"}>
-          England | انگلیس
+        Scotland | اسکاتلند
           <input
             type="number"
             onChange={getValueOfFirstTeam}
@@ -73,7 +73,7 @@ const Inputs = (userId) => {
           />
         </label>
         <br />
-        <label className={"title"}>Croatia | کرواسی</label>
+        <label className={"title"}>Czech Republic | جمهوری چک</label>
         <input
           type="number"
           onChange={getValueOfSecondTeam}
@@ -83,7 +83,7 @@ const Inputs = (userId) => {
       <hr />
       <div>
         <label className={"title"}>
-          Netherlands | هلند
+        Poland | لهستان
           <input
             type="number"
             onChange={getValueOfThirdTeam}
@@ -91,7 +91,7 @@ const Inputs = (userId) => {
           />
         </label>
         <br />
-        <label className={"title"}>Ukraine | اکراین</label>
+        <label className={"title"}>Slovakia | اسلواکی</label>
         <input
           type="number"
           onChange={getValueOfFourthTeam}
@@ -101,7 +101,7 @@ const Inputs = (userId) => {
       <hr />
       <div>
         <label className={"title"}>
-          Austria | اتریش
+        Spain | اسپانیا
           <input
             type="number"
             onChange={getValueOfFifthTeam}
@@ -109,7 +109,7 @@ const Inputs = (userId) => {
           />
         </label>
         <br />
-        <label className={"title"}>Macedonia | مقدونیه</label>
+        <label className={"title"}>Sweden | سوئد</label>
         <input type="number" onChange={getValueOfSixTeam} className={"input"} />
       </div>
       <br />
