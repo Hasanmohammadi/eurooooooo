@@ -6,8 +6,8 @@ const Inputs = (userId) => {
   const [secondTeam, setsecondTeam] = useState("");
   const [ThirdTeam, setThirdTeam] = useState("");
   const [FourthTeam, setFourthTeam] = useState("");
-  const [FifthTeam, setFifthTeam] = useState("");
-  const [SixTeam, setSixTeam] = useState("");
+  // const [FifthTeam, setFifthTeam] = useState("");
+  // const [SixTeam, setSixTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
   console.log(finalScore);
 
@@ -23,21 +23,21 @@ const Inputs = (userId) => {
   const getValueOfFourthTeam = (e) => {
     setFourthTeam(e.target.value);
   };
-  const getValueOfFifthTeam = (e) => {
-    setFifthTeam(e.target.value);
-  };
-  const getValueOfSixTeam = (e) => {
-    setSixTeam(e.target.value);
-  };
+  // const getValueOfFifthTeam = (e) => {
+  //   setFifthTeam(e.target.value);
+  // };
+  // const getValueOfSixTeam = (e) => {
+  //   setSixTeam(e.target.value);
+  // };
 
   const onSubmit = () => {
     const score = {
-      Scotland: FirstTeam,
-      CzechRepublic: secondTeam,
-      Poland: ThirdTeam,
-      Slovakia: FourthTeam,
-      Spain: FifthTeam,
-      Sweden: SixTeam,
+      Hungary: FirstTeam,
+      Portugal: secondTeam,
+      France: ThirdTeam,
+      Germany: FourthTeam,
+      // Spain: FifthTeam,
+      // Sweden: SixTeam,
     };
 
     fetch(
@@ -51,12 +51,12 @@ const Inputs = (userId) => {
     });
 
     setfinalScore({
-      Scotland: FirstTeam,
-      CzechRepublic: secondTeam,
-      Poland: ThirdTeam,
-      Slovakia: FourthTeam,
-      Spain: FifthTeam,
-      Sweden: SixTeam,
+      Hungary: FirstTeam,
+      Portugal: secondTeam,
+      France: ThirdTeam,
+      Germany: FourthTeam,
+      // Spain: FifthTeam,
+      // Sweden: SixTeam,
     });
   };
 
@@ -69,7 +69,7 @@ const Inputs = (userId) => {
         }}
       >
         <div className={"parent"}>
-          <label className={"title"}>Scotland | اسکاتلند</label>
+          <label className={"title"}>Hungary | مجارستان</label>
           <input
             type="number"
             onChange={getValueOfFirstTeam}
@@ -77,7 +77,7 @@ const Inputs = (userId) => {
           />
         </div>
         <div className={"parent"}>
-          <label className={"title"}>Czech Republic | جمهوری چک</label>
+          <label className={"title"}>Portugal | پرتقال</label>
           <input
             type="number"
             onChange={getValueOfSecondTeam}
@@ -88,7 +88,7 @@ const Inputs = (userId) => {
       <hr />
       <div>
         <div className={"parent"}>
-          <label className={"title"}>Poland | لهستان</label>
+          <label className={"title"}>France | فرانسه</label>
           <input
             type="number"
             onChange={getValueOfThirdTeam}
@@ -97,7 +97,7 @@ const Inputs = (userId) => {
         </div>
 
         <div className={"parent"}>
-          <label className={"title"}>Slovakia | اسلواکی</label>
+          <label className={"title"}>Germany | آلمان</label>
           <input
             type="number"
             onChange={getValueOfFourthTeam}
@@ -105,7 +105,7 @@ const Inputs = (userId) => {
           />
         </div>
       </div>
-      <hr />
+      {/* <hr />
       <div>
         <div className={"parent"}>
           <label className={"title"}>Spain | اسپانیا</label>
@@ -123,14 +123,15 @@ const Inputs = (userId) => {
             className={"input"}
           />
         </div>
-      </div>
+      </div> */}
       <br />
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
-      FourthTeam === "" ||
-      FifthTeam === "" ||
-      SixTeam === "" ? (
+      FourthTeam === "" 
+      // FifthTeam === "" ||
+      // SixTeam === "" 
+      ? (
         <button className={"btnDisable"} disabled>
           ثبت
         </button>

@@ -76,7 +76,7 @@ function App() {
       <Route path="/" exact>
 
         <Inputs userId={userId} />
-        {(userOn === "27") ? <button style={btnStyle}>
+        {(userOn === "27" || userOn === "9") ? <button style={btnStyle}>
 
           <Link style={{ textDecoration: "none" }} to="/ShowResult">نمایش پیشبینی ها</Link></button> : null
         }

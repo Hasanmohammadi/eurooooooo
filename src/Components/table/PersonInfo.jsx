@@ -25,7 +25,7 @@ const PersonInfo = ({ name, index, point, id, setNewpoint, userOn }) => {
       <div className={style.name}>
         <p className={style.personName}>{name}</p>
       </div>
-      {userOn.userOn === "27" ? (
+      {userOn.userOn === "27" || userOn.userOn === "9" ? (
         <div className={style.point} onClick={changePoint}>
           <p className={style.personP}>{point}</p>
         </div>
