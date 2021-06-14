@@ -65,7 +65,7 @@ const Inputs = (userId) => {
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
       <div
         style={{
-          marginTop: "6em",
+          marginTop: "3em",
         }}
       >
         <div className={"parent"}>
