@@ -65,6 +65,8 @@ export default function convertId(id) {
            
         case "199":
            return newId = 32
+        case "7":
+           return newId = 34
            
 
         default:

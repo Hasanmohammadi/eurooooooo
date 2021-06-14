@@ -33,7 +33,7 @@ const Inputs = (userId) => {
   const onSubmit = () => {
     const score = {
       Scotland: FirstTeam,
-      CzechRepublic : secondTeam,
+      CzechRepublic: secondTeam,
       Poland: ThirdTeam,
       Slovakia: FourthTeam,
       Spain: FifthTeam,
@@ -52,7 +52,7 @@ const Inputs = (userId) => {
 
     setfinalScore({
       Scotland: FirstTeam,
-      CzechRepublic : secondTeam,
+      CzechRepublic: secondTeam,
       Poland: ThirdTeam,
       Slovakia: FourthTeam,
       Spain: FifthTeam,
@@ -63,57 +63,74 @@ const Inputs = (userId) => {
   return (
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
-      <div>
-        <label className={"title"}>
-        Scotland | اسکاتلند
+      <div
+        style={{
+          marginTop: "6em",
+        }}
+      >
+        <div className={"parent"}>
+          <label className={"title"}>Scotland | اسکاتلند</label>
           <input
             type="number"
             onChange={getValueOfFirstTeam}
             className={"input"}
           />
-        </label>
-        <br />
-        <label className={"title"}>Czech Republic | جمهوری چک</label>
-        <input
-          type="number"
-          onChange={getValueOfSecondTeam}
-          className={"input"}
-        />
+        </div>
+        <div className={"parent"}>
+          <label className={"title"}>Czech Republic | جمهوری چک</label>
+          <input
+            type="number"
+            onChange={getValueOfSecondTeam}
+            className={"input"}
+          />
+        </div>
       </div>
       <hr />
       <div>
-        <label className={"title"}>
-        Poland | لهستان
+        <div className={"parent"}>
+          <label className={"title"}>Poland | لهستان</label>
           <input
             type="number"
             onChange={getValueOfThirdTeam}
             className={"input"}
           />
-        </label>
-        <br />
-        <label className={"title"}>Slovakia | اسلواکی</label>
-        <input
-          type="number"
-          onChange={getValueOfFourthTeam}
-          className={"input"}
-        />
+        </div>
+
+        <div className={"parent"}>
+          <label className={"title"}>Slovakia | اسلواکی</label>
+          <input
+            type="number"
+            onChange={getValueOfFourthTeam}
+            className={"input"}
+          />
+        </div>
       </div>
       <hr />
       <div>
-        <label className={"title"}>
-        Spain | اسپانیا
+        <div className={"parent"}>
+          <label className={"title"}>Spain | اسپانیا</label>
           <input
             type="number"
             onChange={getValueOfFifthTeam}
             className={"input"}
           />
-        </label>
-        <br />
-        <label className={"title"}>Sweden | سوئد</label>
-        <input type="number" onChange={getValueOfSixTeam} className={"input"} />
+        </div>
+        <div className={"parent"}>
+          <label className={"title"}>Sweden | سوئد</label>
+          <input
+            type="number"
+            onChange={getValueOfSixTeam}
+            className={"input"}
+          />
+        </div>
       </div>
       <br />
-      {FirstTeam === "" || secondTeam === "" || ThirdTeam==="" || FourthTeam==="" || FifthTeam==="" || SixTeam==="" ? (
+      {FirstTeam === "" ||
+      secondTeam === "" ||
+      ThirdTeam === "" ||
+      FourthTeam === "" ||
+      FifthTeam === "" ||
+      SixTeam === "" ? (
         <button className={"btnDisable"} disabled>
           ثبت
         </button>

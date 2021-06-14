@@ -37,25 +37,52 @@ function App() {
 
 
 
-  if (!userOn || !userId) {
-    return <h1>رمز اشتباه است</h1>
+  // if (!userOn || !userId) {
+
+  //   return (
+  //     <div className={"error"}>
+  //       <h1>رمز اشتباه است</h1>
+  //       <h1>Wrong password</h1>
+  //     </div>
+  //   )
+
+  // }
+
+  if (!userOn) {
+    return (
+      <div className={"error"}>
+        <h1>رمز خود را وارد کنید </h1>
+        <h1>Please enter your password</h1>
+      </div>
+    )
+  } else if (userOn && !userId) {
+
+    return (
+      <div className={"error"}>
+        <h1>رمز اشتباه است</h1>
+        <h1>Wrong password</h1>
+      </div>
+    )
+
   }
+
 
   return (
     <div className="App">
+     
       <Route path="/ShowResult" exact>
         <ShowResult />
       </Route>
       <Route path="/" exact>
 
         <Inputs userId={userId} />
-        {userOn === "27" ? <button style={btnStyle}>
+        {(userOn === "27") ? <button style={btnStyle}>
 
           <Link style={{ textDecoration: "none" }} to="/ShowResult">نمایش پیشبینی ها</Link></button> : null
         }
 
 
-        <Table userOn={userOn}  />
+        <Table userOn={userOn} />
       </Route>
 
     </div>

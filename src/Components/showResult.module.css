@@ -6,7 +6,7 @@
 }
 .personContainer{
     display: flex;
-    color: goldenrod;
+    color: white;
     justify-content: space-evenly;
     border-bottom: 1px solid goldenrod;
 }
@@ -14,6 +14,7 @@
     width: 30%;
     border-right: 1px solid goldenrod;
     padding: 9px 3px;
+    color: goldenrod;
 
 }
 .firstTeamDiv{
