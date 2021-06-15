@@ -6,8 +6,8 @@ const Inputs = (userId) => {
   const [secondTeam, setsecondTeam] = useState("");
   const [ThirdTeam, setThirdTeam] = useState("");
   const [FourthTeam, setFourthTeam] = useState("");
-  // const [FifthTeam, setFifthTeam] = useState("");
-  // const [SixTeam, setSixTeam] = useState("");
+  const [FifthTeam, setFifthTeam] = useState("");
+  const [SixTeam, setSixTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
   console.log(finalScore);
 
@@ -23,21 +23,21 @@ const Inputs = (userId) => {
   const getValueOfFourthTeam = (e) => {
     setFourthTeam(e.target.value);
   };
-  // const getValueOfFifthTeam = (e) => {
-  //   setFifthTeam(e.target.value);
-  // };
-  // const getValueOfSixTeam = (e) => {
-  //   setSixTeam(e.target.value);
-  // };
+  const getValueOfFifthTeam = (e) => {
+    setFifthTeam(e.target.value);
+  };
+  const getValueOfSixTeam = (e) => {
+    setSixTeam(e.target.value);
+  };
 
   const onSubmit = () => {
     const score = {
-      Hungary: FirstTeam,
-      Portugal: secondTeam,
-      France: ThirdTeam,
-      Germany: FourthTeam,
-      // Spain: FifthTeam,
-      // Sweden: SixTeam,
+      Finland: FirstTeam,
+      Russia: secondTeam,
+      Turkey: ThirdTeam,
+      Wales: FourthTeam,
+      Italy: FifthTeam,
+      Switzerland: SixTeam,
     };
 
     fetch(
@@ -50,14 +50,7 @@ const Inputs = (userId) => {
       }
     });
 
-    setfinalScore({
-      Hungary: FirstTeam,
-      Portugal: secondTeam,
-      France: ThirdTeam,
-      Germany: FourthTeam,
-      // Spain: FifthTeam,
-      // Sweden: SixTeam,
-    });
+    setfinalScore(score);
   };
 
   return (
@@ -69,7 +62,7 @@ const Inputs = (userId) => {
         }}
       >
         <div className={"parent"}>
-          <label className={"title"}>Hungary | مجارستان</label>
+          <label className={"title"}>Finland | فنلاند</label>
           <input
             type="number"
             onChange={getValueOfFirstTeam}
@@ -77,7 +70,7 @@ const Inputs = (userId) => {
           />
         </div>
         <div className={"parent"}>
-          <label className={"title"}>Portugal | پرتقال</label>
+          <label className={"title"}>Russia | روسیه</label>
           <input
             type="number"
             onChange={getValueOfSecondTeam}
@@ -88,7 +81,7 @@ const Inputs = (userId) => {
       <hr />
       <div>
         <div className={"parent"}>
-          <label className={"title"}>France | فرانسه</label>
+          <label className={"title"}>Turkey | ترکیه</label>
           <input
             type="number"
             onChange={getValueOfThirdTeam}
@@ -97,7 +90,7 @@ const Inputs = (userId) => {
         </div>
 
         <div className={"parent"}>
-          <label className={"title"}>Germany | آلمان</label>
+          <label className={"title"}>Wales | ولز</label>
           <input
             type="number"
             onChange={getValueOfFourthTeam}
@@ -105,10 +98,10 @@ const Inputs = (userId) => {
           />
         </div>
       </div>
-      {/* <hr />
+      <hr />
       <div>
         <div className={"parent"}>
-          <label className={"title"}>Spain | اسپانیا</label>
+          <label className={"title"}>Italy | ایتالیا</label>
           <input
             type="number"
             onChange={getValueOfFifthTeam}
@@ -116,22 +109,21 @@ const Inputs = (userId) => {
           />
         </div>
         <div className={"parent"}>
-          <label className={"title"}>Sweden | سوئد</label>
+          <label className={"title"}>Switzerland | سوییس</label>
           <input
             type="number"
             onChange={getValueOfSixTeam}
             className={"input"}
           />
         </div>
-      </div> */}
+      </div>
       <br />
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
-      FourthTeam === "" 
-      // FifthTeam === "" ||
-      // SixTeam === "" 
-      ? (
+      FourthTeam === "" ||
+      FifthTeam === "" ||
+      SixTeam === "" ? (
         <button className={"btnDisable"} disabled>
           ثبت
         </button>
