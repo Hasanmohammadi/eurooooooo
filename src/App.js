@@ -47,12 +47,18 @@ function App() {
   //   )
 
   // }
+  const refresh = () => {
+    window.location.reload();
+  }
+
+
 
   if (!userOn) {
     return (
       <div className={"error"}>
         <h1>رمز خود را وارد کنید </h1>
         <h1>Please enter your password</h1>
+        <button onClick={refresh} className={"refreshBtn"}>ورود مجدد</button>
       </div>
     )
   } else if (userOn && !userId) {
@@ -61,6 +67,7 @@ function App() {
       <div className={"error"}>
         <h1>رمز اشتباه است</h1>
         <h1>Wrong password</h1>
+        
       </div>
     )
 

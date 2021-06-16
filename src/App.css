@@ -37,8 +37,19 @@
   }
 }
 
-.error{
+.error {
   margin: auto;
   text-align: center;
   color: goldenrod;
+}
+
+.refreshBtn {
+  width: 11em;
+  height: 2em;
+  margin-top: 2em;
+  background: goldenrod;
+  color: darkslateblue;
+  font-weight: bold;
+  border: 1px solid goldenrod;
+  border-radius: 7em;
 }
