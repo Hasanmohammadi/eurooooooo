@@ -1,24 +1,27 @@
 .title {
-  color: goldenrod;
+  font-family: cursive;
+  color: ghostwhite;
   margin-top: 12px;
 }
 
 .input {
-  color: red;
+  color: deepskyblue;
   font-size: x-large;
   width: 5em;
   height: 1em;
-  border: 2px solid goldenrod;
+  border: 2px solid deepskyblue;
   border-radius: 17px;
   text-align: center;
   margin: 10px 10px;
+  background: repeating-radial-gradient(black, transparent 100px);
+  font-family: cursive;
 }
 
 .btn {
   width: 10em;
   height: 1.4em;
-  background: goldenrod;
-  border: gold 1px solid;
+  background: cadetblue;
+  border: deepskyblue 1px solid;
   color: #091464;
   font-size: 19px;
   border-radius: 1em;
@@ -43,6 +46,8 @@
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 0px;
+  text-align: end;
+
 }
 
 .image {

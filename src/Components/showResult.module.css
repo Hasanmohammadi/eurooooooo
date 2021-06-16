@@ -15,21 +15,25 @@
     border-right: 1px solid goldenrod;
     padding: 9px 3px;
     color: goldenrod;
+    background: rgb(0, 22, 54);
 
 }
 .firstTeamDiv{
     width: 30%;
     padding: 9px 3px;
+    background: rgb(0, 22, 54);
 
 }
 .secondTeamDiv{
     width: 30%;
     border-left: 1px solid goldenrod;
     padding: 9px 3px;
+    background: rgb(0, 22, 54);
+
 
 }
 
 .h1{
-    color: hotpink;
+    color: rgb(0, 22, 54);
     font-family: cursive;
 }

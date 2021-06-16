@@ -40,16 +40,20 @@
 .error {
   margin: auto;
   text-align: center;
-  color: goldenrod;
+  color: darkblue;
+  background-image: url("./spt2150.jpg");
+  height: 100vh;
+  background-position: top;
+  margin: -21px 0 0 0;
+
 }
 
 .refreshBtn {
   width: 11em;
   height: 2em;
-  margin-top: 2em;
-  background: goldenrod;
-  color: darkslateblue;
+  background:repeating-radial-gradient(black, transparent 100px);
+  color: whitesmoke;
   font-weight: bold;
-  border: 1px solid goldenrod;
+  border: 1px solid deepskyblue;
   border-radius: 7em;
 }

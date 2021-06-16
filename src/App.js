@@ -20,8 +20,8 @@ function App() {
 
     width: "10em",
     height: "1.4em",
-    background: "goldenrod",
-    border: "gold 1px solid",
+    background: "cadetblue",
+    border: "deepskyblue 1px solid",
     color: "#091464",
     fontSize: "19px",
     borderRadius: "1em",
@@ -58,8 +58,8 @@ function App() {
   if (!userOn) {
     return (
       <div className={"error"}>
-        <h1>رمز خود را وارد کنید </h1>
-        <h1>Please enter your password</h1>
+        <h2>رمز خود را وارد کنید </h2>
+        <h2>Please enter your password</h2>
         <button onClick={refresh} className={"refreshBtn"}>ورود مجدد</button>
       </div>
     )
