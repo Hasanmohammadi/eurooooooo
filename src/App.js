@@ -29,11 +29,8 @@ function App() {
 
   }
   useEffect(() => {
-    let userNumber
-    setTimeout(() => {
-
-      userNumber = prompt("کد خود را وارد کنید")
-    }, 0);
+    
+    const userNumber = prompt("کد خود را وارد کنید")
 
     setUserOn(userNumber)
     setUserIdFn(convertId(userNumber))
@@ -74,17 +71,17 @@ function App() {
       <div className={"error"}>
         <h1>رمز اشتباه است</h1>
         <h1>Wrong password</h1>
-
+        
       </div>
     )
 
   }
+ 
 
-
-  console.log(userId);
+console.log(userId);
   return (
     <div className="App">
-
+     
       <Route path="/ShowResult" exact>
         <ShowResult />
       </Route>
@@ -97,7 +94,7 @@ function App() {
         }
 
 
-        <Table userOn={userOn} setUserName={setUserName} userId={userId} />
+        <Table userOn={userOn}  setUserName={setUserName} userId={userId}/>
       </Route>
 
     </div>
