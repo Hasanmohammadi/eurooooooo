@@ -135,20 +135,11 @@ const Inputs = (userId) => {
       </div>
       <br />
       </>}
-      {FirstTeam === "" ||
-      secondTeam === "" ||
-      ThirdTeam === "" ||
-      FourthTeam === "" ||
-      FifthTeam === "" ||
-      SixTeam === "" ? (
-        <button className={"btnDisable"} disabled>
-          ثبت
-        </button>
-      ) : (
+ 
         <button onClick={onSubmit} className={"btn"}>
           ثبت
         </button>
-      )}
+   
     </div>
   );
 };
