@@ -52,33 +52,40 @@ const Inputs = (userId) => {
 
     setfinalScore(score);
   };
+  const time = new Date();
 
   return (
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
-      <div
-        style={{
-          marginTop: "3em",
-        }}
-      >
-        <div className={"parent"}>
-          <label className={"title"}>Finland | فنلاند</label>
-          <input
-            type="number"
-            onChange={getValueOfFirstTeam}
-            className={"input"}
-          />
-        </div>
-        <div className={"parent"}>
-          <label className={"title"}>Russia | روسیه</label>
-          <input
-            type="number"
-            onChange={getValueOfSecondTeam}
-            className={"input"}
-          />
-        </div>
-      </div>
-      <hr />
+      {time.getHours() >= 17 && time.getMinutes() > 30 ? null : (
+        <>
+          <div
+            style={{
+              marginTop: "3em",
+            }}
+          >
+            <div className={"parent"}>
+              <label className={"title"}>Finland | فنلاند</label>
+              <input
+                type="number"
+                onChange={getValueOfFirstTeam}
+                className={"input"}
+              />
+            </div>
+            <div className={"parent"}>
+              <label className={"title"}>Russia | روسیه</label>
+              <input
+                type="number"
+                onChange={getValueOfSecondTeam}
+                className={"input"}
+              />
+            </div>
+          </div>
+          <hr />
+        </>
+      )}
+      {time.getHours() >= 20 && time.getMinutes() > 30 ? null :
+      <>
       <div>
         <div className={"parent"}>
           <label className={"title"}>Turkey | ترکیه</label>
@@ -86,7 +93,7 @@ const Inputs = (userId) => {
             type="number"
             onChange={getValueOfThirdTeam}
             className={"input"}
-          />
+            />
         </div>
 
         <div className={"parent"}>
@@ -95,10 +102,14 @@ const Inputs = (userId) => {
             type="number"
             onChange={getValueOfFourthTeam}
             className={"input"}
-          />
+            />
         </div>
       </div>
       <hr />
+      </>
+          }
+          {time.getHours() >= 23 && time.getMinutes() > 30 ? null :
+      <>
       <div>
         <div className={"parent"}>
           <label className={"title"}>Italy | ایتالیا</label>
@@ -106,7 +117,7 @@ const Inputs = (userId) => {
             type="number"
             onChange={getValueOfFifthTeam}
             className={"input"}
-          />
+            />
         </div>
         <div className={"parent"}>
           <label className={"title"}>Switzerland | سوییس</label>
@@ -114,10 +125,11 @@ const Inputs = (userId) => {
             type="number"
             onChange={getValueOfSixTeam}
             className={"input"}
-          />
+            />
         </div>
       </div>
       <br />
+      </>}
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
