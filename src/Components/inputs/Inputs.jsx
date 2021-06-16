@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 
-import wales from "./flag/wales.jpg";
-import turkey from "./flag/turkey.jpg";
-import italy from "./flag/italy.jpg";
-import switzerland from "./flag/switzerland.jpg";
+// import wales from "./flag/wales.jpg";
+// import turkey from "./flag/turkey.jpg";
+// import italy from "./flag/italy.jpg";
+// import switzerland from "./flag/switzerland.jpg";
 
 import ukrain from "./flag/ukrain.png";
 import Macedonia from "./flag/Macedonia.jpg";
