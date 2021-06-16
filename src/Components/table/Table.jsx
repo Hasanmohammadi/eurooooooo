@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import PersonInfo from "./PersonInfo";
 import style from "./style.module.css";
 
-
-const Table = (userOn) => {
+const Table = (userOn, { setUserName, id }) => {
   const [persons, setPersons] = useState([]);
   const [newPoint, setNewpoint] = useState();
   useEffect(() => {
@@ -13,7 +12,6 @@ const Table = (userOn) => {
         .then((data) => {
           const finalData = data.users.sort((a, b) => b.point - a.point);
           setPersons(finalData);
-         
         });
     };
 

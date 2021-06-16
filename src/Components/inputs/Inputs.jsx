@@ -1,10 +1,18 @@
 import { useState } from "react";
 import "./style.css";
 
-import wales from "./wales.jpg"
-import turkey from "./turkey.jpg"
-import italy from "./italy.jpg"
-import switzerland from "./switzerland.jpg"
+import wales from "./flag/wales.jpg";
+import turkey from "./flag/turkey.jpg";
+import italy from "./flag/italy.jpg";
+import switzerland from "./flag/switzerland.jpg";
+
+import ukrain from "./flag/ukrain.png";
+import Macedonia from "./flag/Macedonia.jpg";
+import Denmark from "./flag/Denmark.jpg";
+import Belgium from "./flag/Belgium.jpg";
+import Netherlands from "./flag/Netherlands.jpg";
+import Austria from "./flag/Austria.jpg";
+
 const Inputs = (userId) => {
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
@@ -36,12 +44,12 @@ const Inputs = (userId) => {
 
   const onSubmit = () => {
     const score = {
-      Finland: FirstTeam,
-      Russia: secondTeam,
-      Turkey: ThirdTeam,
-      Wales: FourthTeam,
-      Italy: FifthTeam,
-      Switzerland: SixTeam,
+      Ukrain: FirstTeam,
+      Macedonia: secondTeam,
+      Denmark: ThirdTeam,
+      Belgium: FourthTeam,
+      Netherlands: FifthTeam,
+      Austria: SixTeam,
     };
 
     fetch(
@@ -61,7 +69,8 @@ const Inputs = (userId) => {
   return (
     <div>
       <h1 className={"title"}>😎آبادان سیتی 😎</h1>
-      {time.getHours() >= 17 && time.getMinutes() > 30 ? null : (
+      {(time.getHours() === 17 && time.getMinutes() > 30) ||
+      time.getHours() > 17 ? null : (
         <>
           <div
             style={{
@@ -69,7 +78,10 @@ const Inputs = (userId) => {
             }}
           >
             <div className={"parent"}>
-              <label className={"title"}>Finland | فنلاند <img className={"image"} src={"./finland-ch.webp"} alt="firstTeamLogo"/></label>
+              <label className={"title"}>
+                Ukrain | اکراین{" "}
+                <img className={"image"} src={ukrain} alt="firstTeamLogo" />
+              </label>
               <input
                 type="number"
                 onChange={getValueOfFirstTeam}
@@ -77,7 +89,10 @@ const Inputs = (userId) => {
               />
             </div>
             <div className={"parent"}>
-              <label className={"title"}>Russia | روسیه <img className={"image"} src={"./russia-flag.jpg"} alt="secondTeamLogo"/></label>
+              <label className={"title"}>
+                Macedonia | مقدونیه{" "}
+                <img className={"image"} src={Macedonia} alt="secondTeamLogo" />
+              </label>
               <input
                 type="number"
                 onChange={getValueOfSecondTeam}
@@ -88,58 +103,76 @@ const Inputs = (userId) => {
           <hr />
         </>
       )}
-      {time.getHours() >= 20 && time.getMinutes() > 30 ? null :
-      <>
-      <div>
-        <div className={"parent"}>
-          <label className={"title"}>Turkey | ترکیه <img className={"image"} src={turkey} alt="thirdTeamLogo"/></label>
-          <input
-            type="number"
-            onChange={getValueOfThirdTeam}
-            className={"input"}
-            />
-        </div>
+      {(time.getHours() === 20 && time.getMinutes() > 30) ||
+      time.getHours() > 20 ? null : (
+        <>
+          <div>
+            <div className={"parent"}>
+              <label className={"title"}>
+                Denmark | دانمارک{" "}
+                <img className={"image"} src={Denmark} alt="thirdTeamLogo" />
+              </label>
+              <input
+                type="number"
+                onChange={getValueOfThirdTeam}
+                className={"input"}
+              />
+            </div>
 
-        <div className={"parent"}>
-          <label className={"title"}>Wales | ولز <img className={"image"} src={wales} alt="thirdTeamLogo"/></label>
-          <input
-            type="number"
-            onChange={getValueOfFourthTeam}
-            className={"input"}
-            />
-        </div>
-      </div>
-      <hr />
-      </>
-          }
-          {time.getHours() >= 23 && time.getMinutes() > 30 ? null :
-      <>
-      <div>
-        <div className={"parent"}>
-          <label className={"title"}>Italy | ایتالیا <img className={"image"} src={italy} alt="thirdTeamLogo"/></label>
-          <input
-            type="number"
-            onChange={getValueOfFifthTeam}
-            className={"input"}
-            />
-        </div>
+            <div className={"parent"}>
+              <label className={"title"}>
+                Belgium | بلژیک{" "}
+                <img className={"image"} src={Belgium} alt="thirdTeamLogo" />
+              </label>
+              <input
+                type="number"
+                onChange={getValueOfFourthTeam}
+                className={"input"}
+              />
+            </div>
+          </div>
+          <hr />
+        </>
+      )}
+      {(time.getHours() === 23 && time.getMinutes() > 30) ||
+      time.getHours() > 23 ? null : (
+        <>
+          <div>
+            <div className={"parent"}>
+              <label className={"title"}>
+                Netherlands | هلند{" "}
+                <img
+                  className={"image"}
+                  src={Netherlands}
+                  alt="thirdTeamLogo"
+                />
+              </label>
+              <input
+                type="number"
+                onChange={getValueOfFifthTeam}
+                className={"input"}
+              />
+            </div>
 
-        <div className={"parent"}>
-          <label className={"title"}>Switzerland | سوییس <img className={"image"} src={switzerland} alt="thirdTeamLogo"/></label>
-          <input
-            type="number"
-            onChange={getValueOfSixTeam}
-            className={"input"}
-            />
-        </div>
-      </div>
-      <br />
-      </>}
- 
-        <button onClick={onSubmit} className={"btn"}>
-          ثبت
-        </button>
-   
+            <div className={"parent"}>
+              <label className={"title"}>
+                Austria | اتریش{" "}
+                <img className={"image"} src={Austria} alt="thirdTeamLogo" />
+              </label>
+              <input
+                type="number"
+                onChange={getValueOfSixTeam}
+                className={"input"}
+              />
+            </div>
+          </div>
+          <br />
+        </>
+      )}
+
+      <button onClick={onSubmit} className={"btn"}>
+        ثبت
+      </button>
     </div>
   );
 };

@@ -9,6 +9,8 @@ import convertId from './convert';
 function App() {
   const [userOn, setUserOn] = useState(0)
   const [userId, setUserId] = useState(0)
+  const [userName, setUserName] = useState("")
+  console.log(userName);
 
   const setUserIdFn = (id) => {
     setUserId(id)
@@ -72,8 +74,9 @@ function App() {
     )
 
   }
+ 
 
-
+console.log(userId);
   return (
     <div className="App">
      
@@ -89,7 +92,7 @@ function App() {
         }
 
 
-        <Table userOn={userOn} />
+        <Table userOn={userOn}  setUserName={setUserName} userId={userId}/>
       </Route>
 
     </div>
