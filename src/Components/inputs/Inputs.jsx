@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 
+import wales from "./wales.jpg"
+import turkey from "./turkey.jpg"
+import italy from "./italy.jpg"
+import switzerland from "./switzerland.jpg"
 const Inputs = (userId) => {
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
@@ -65,7 +69,7 @@ const Inputs = (userId) => {
             }}
           >
             <div className={"parent"}>
-              <label className={"title"}>Finland | فنلاند</label>
+              <label className={"title"}>Finland | فنلاند <img className={"image"} src={"./finland-ch.webp"} alt="firstTeamLogo"/></label>
               <input
                 type="number"
                 onChange={getValueOfFirstTeam}
@@ -73,7 +77,7 @@ const Inputs = (userId) => {
               />
             </div>
             <div className={"parent"}>
-              <label className={"title"}>Russia | روسیه</label>
+              <label className={"title"}>Russia | روسیه <img className={"image"} src={"./russia-flag.jpg"} alt="secondTeamLogo"/></label>
               <input
                 type="number"
                 onChange={getValueOfSecondTeam}
@@ -88,7 +92,7 @@ const Inputs = (userId) => {
       <>
       <div>
         <div className={"parent"}>
-          <label className={"title"}>Turkey | ترکیه</label>
+          <label className={"title"}>Turkey | ترکیه <img className={"image"} src={turkey} alt="thirdTeamLogo"/></label>
           <input
             type="number"
             onChange={getValueOfThirdTeam}
@@ -97,7 +101,7 @@ const Inputs = (userId) => {
         </div>
 
         <div className={"parent"}>
-          <label className={"title"}>Wales | ولز</label>
+          <label className={"title"}>Wales | ولز <img className={"image"} src={wales} alt="thirdTeamLogo"/></label>
           <input
             type="number"
             onChange={getValueOfFourthTeam}
@@ -112,15 +116,16 @@ const Inputs = (userId) => {
       <>
       <div>
         <div className={"parent"}>
-          <label className={"title"}>Italy | ایتالیا</label>
+          <label className={"title"}>Italy | ایتالیا <img className={"image"} src={italy} alt="thirdTeamLogo"/></label>
           <input
             type="number"
             onChange={getValueOfFifthTeam}
             className={"input"}
             />
         </div>
+
         <div className={"parent"}>
-          <label className={"title"}>Switzerland | سوییس</label>
+          <label className={"title"}>Switzerland | سوییس <img className={"image"} src={switzerland} alt="thirdTeamLogo"/></label>
           <input
             type="number"
             onChange={getValueOfSixTeam}

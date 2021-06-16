@@ -1,50 +1,53 @@
-.title{
-    color: goldenrod;
-    margin-top: 12px;
+.title {
+  color: goldenrod;
+  margin-top: 12px;
 }
 
-.input{
-    
-        color: red;
-        font-size: x-large;
-        width: 5em;
-        height: 1em;
-        border: 2px solid goldenrod;
-        border-radius: 17px;
-        text-align: center;
-        margin:10px 10px;
-
+.input {
+  color: red;
+  font-size: x-large;
+  width: 5em;
+  height: 1em;
+  border: 2px solid goldenrod;
+  border-radius: 17px;
+  text-align: center;
+  margin: 10px 10px;
 }
 
-.btn{
-    width: 10em;
-    height: 1.4em;
-    background: goldenrod;
-    border: gold 1px solid;
-    color: #091464;
-    font-size: 19px;
-    border-radius: 1em;
+.btn {
+  width: 10em;
+  height: 1.4em;
+  background: goldenrod;
+  border: gold 1px solid;
+  color: #091464;
+  font-size: 19px;
+  border-radius: 1em;
 }
-.btnDisable{
-    width: 10em;
-    height: 1.4em;
-    border: gold 1px solid;
-    color: #091464;
-    font-size: 19px;
-    border-radius: 1em;
+.btnDisable {
+  width: 10em;
+  height: 1.4em;
+  border: gold 1px solid;
+  color: #091464;
+  font-size: 19px;
+  border-radius: 1em;
 }
 
-.div{
-    display: flex;
-    justify-content: space-evenly;
+.div {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px; 
-    }
-    
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.image {
+  width: 2em;
+  height: 12m;
+  border-radius: 22px;
+  margin: 0px 0px -3px 10px;
+}
