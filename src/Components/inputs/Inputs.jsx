@@ -6,12 +6,21 @@ import "./style.css";
 // import italy from "./flag/italy.jpg";
 // import switzerland from "./flag/switzerland.jpg";
 
-import ukrain from "./flag/ukrain.png";
-import Macedonia from "./flag/Macedonia.jpg";
-import Denmark from "./flag/Denmark.jpg";
-import Belgium from "./flag/Belgium.jpg";
-import Netherlands from "./flag/Netherlands.jpg";
-import Austria from "./flag/Austria.jpg";
+// import ukrain from "./flag/ukrain.png";
+// import Macedonia from "./flag/Macedonia.jpg";
+// import Denmark from "./flag/Denmark.jpg";
+// import Belgium from "./flag/Belgium.jpg";
+// import Netherlands from "./flag/Netherlands.jpg";
+// import Austria from "./flag/Austria.jpg";
+import Croatia from "./flag/Croatia.jpg";
+import Czech from "./flag/Czech.jpg";
+import Sweden from "./flag/Sweden.webp";
+import Slovakia from "./flag/slovakia.webp";
+import England from "./flag/England.webp";
+import Scotland from "./flag/Scotland.webp";
+
+
+
 
 const Inputs = ({userId}) => {
   const time = new Date();
@@ -45,12 +54,12 @@ const Inputs = ({userId}) => {
 
   const onSubmit = () => {
     const score = {
-      Ukrain: FirstTeam,
-      Macedonia: secondTeam,
-      Denmark: ThirdTeam,
-      Belgium: FourthTeam,
-      Netherlands: FifthTeam,
-      Austria: SixTeam,
+      Sweden: FirstTeam,
+      Slovakia: secondTeam,
+      Croatia: ThirdTeam,
+      Czech: FourthTeam,
+      England: FifthTeam,
+      Scotland: SixTeam,
     };
 
     fetch(
@@ -79,8 +88,8 @@ const Inputs = ({userId}) => {
           >
             <div className={"parent"}>
               <label className={"title"}>
-                Ukrain | اکراین{" "}
-                <img className={"image"} src={ukrain} alt="firstTeamLogo" />
+              Sweden | سوئد{" "}
+                <img className={"image"} src={Sweden} alt="firstTeamLogo" />
               </label>
               <input
                 type="number"
@@ -90,8 +99,8 @@ const Inputs = ({userId}) => {
             </div>
             <div className={"parent"}>
               <label className={"title"}>
-                Macedonia | مقدونیه{" "}
-                <img className={"image"} src={Macedonia} alt="secondTeamLogo" />
+              Slovakia | اسلواکی{" "}
+                <img className={"image"} src={Slovakia} alt="secondTeamLogo" />
               </label>
               <input
                 type="number"
@@ -109,8 +118,8 @@ const Inputs = ({userId}) => {
           <div>
             <div className={"parent"}>
               <label className={"title"}>
-                Denmark | دانمارک{" "}
-                <img className={"image"} src={Denmark} alt="thirdTeamLogo" />
+              Croatia | کرواسی{" "}
+                <img className={"image"} src={Croatia} alt="thirdTeamLogo" />
               </label>
               <input
                 type="number"
@@ -121,8 +130,8 @@ const Inputs = ({userId}) => {
 
             <div className={"parent"}>
               <label className={"title"}>
-                Belgium | بلژیک{" "}
-                <img className={"image"} src={Belgium} alt="thirdTeamLogo" />
+              Czech republic | چک{" "}
+                <img className={"image"} src={Czech} alt="thirdTeamLogo" />
               </label>
               <input
                 type="number"
@@ -140,10 +149,10 @@ const Inputs = ({userId}) => {
           <div>
             <div className={"parent"}>
               <label className={"title"}>
-                Netherlands | هلند{" "}
+              England | انگلیس{" "}
                 <img
                   className={"image"}
-                  src={Netherlands}
+                  src={England}
                   alt="thirdTeamLogo"
                 />
               </label>
@@ -156,8 +165,8 @@ const Inputs = ({userId}) => {
 
             <div className={"parent"}>
               <label className={"title"}>
-                Austria | اتریش{" "}
-                <img className={"image"} src={Austria} alt="thirdTeamLogo" />
+              Scotland | اسکاتلند{" "}
+                <img className={"image"} src={Scotland} alt="thirdTeamLogo" />
               </label>
               <input
                 type="number"

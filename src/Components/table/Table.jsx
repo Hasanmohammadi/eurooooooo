@@ -21,7 +21,7 @@ const Table = ({ userOn, userId }) => {
   }, [newPoint]);
 
   const getPredictions = () => {
-    const user = persons.find((person) =>Number(person.id)  === userId);
+    const user = persons.find((person) =>+person.id  === userId);
     const prediction = JSON.parse(user.description);
     const keys = Object.keys(prediction);
     const value = Object.values(prediction);
