@@ -13,7 +13,8 @@ import Belgium from "./flag/Belgium.jpg";
 import Netherlands from "./flag/Netherlands.jpg";
 import Austria from "./flag/Austria.jpg";
 
-const Inputs = (userId) => {
+const Inputs = ({userId}) => {
+  const time = new Date();
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
   const [ThirdTeam, setThirdTeam] = useState("");
@@ -54,7 +55,7 @@ const Inputs = (userId) => {
 
     fetch(
       `https://lavazemet.ir/hassan/api.php?tag=changedescription&userid=${
-        userId.userId
+       userId
       }&description=${JSON.stringify(score)}`
     ).then((res) => {
       if (res.status === 200) {
@@ -64,7 +65,6 @@ const Inputs = (userId) => {
 
     setfinalScore(score);
   };
-  const time = new Date();
 
   return (
     <div>

@@ -49,3 +49,13 @@
     font-size: 1.5em;
     margin-top: 10px;
 }
+
+.btn{
+  width: 10em;
+  height: 1.4em;
+  background: cadetblue;
+  border: deepskyblue 1px solid;
+  color: #091464;
+  font-size: 19px;
+  border-radius: 1em;
+}
