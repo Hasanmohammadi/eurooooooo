@@ -5,7 +5,7 @@ import style from "./style.module.css";
 const Table = ({ userOn, userId }) => {
   const [persons, setPersons] = useState([]);
   const [newPoint, setNewpoint] = useState();
-  const [user, setUser] = useState({});
+  // const [user, setUser] = useState({});
   useEffect(() => {
     const getData = () => {
       fetch("https://lavazemet.ir/hassan/api.php?tag=getusers")
@@ -21,7 +21,7 @@ const Table = ({ userOn, userId }) => {
   }, [newPoint]);
 
   const getPredictions = () => {
-    const user = persons.find((person) => person.id == userId);
+    const user = persons.find((person) =>Number(person.id)  === userId);
     const prediction = JSON.parse(user.description);
     const keys = Object.keys(prediction);
     const value = Object.values(prediction);
