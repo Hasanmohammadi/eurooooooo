@@ -29,10 +29,12 @@
 .btnDisable {
   width: 10em;
   height: 1.4em;
-  border: gold 1px solid;
-  color: #091464;
+
   font-size: 19px;
   border-radius: 1em;
+  background: unset;
+
+
 }
 
 .div {
