@@ -12,12 +12,18 @@ import "./style.css";
 // import Belgium from "./flag/Belgium.jpg";
 // import Netherlands from "./flag/Netherlands.jpg";
 // import Austria from "./flag/Austria.jpg";
-import Croatia from "./flag/Croatia.jpg";
-import Czech from "./flag/Czech.jpg";
-import Sweden from "./flag/Sweden.webp";
-import Slovakia from "./flag/slovakia.webp";
-import England from "./flag/England.webp";
-import Scotland from "./flag/Scotland.webp";
+// import Croatia from "./flag/Croatia.jpg";
+// import Czech from "./flag/Czech.jpg";
+// import Sweden from "./flag/Sweden.webp";
+// import Slovakia from "./flag/slovakia.webp";
+// import England from "./flag/England.webp";
+// import Scotland from "./flag/Scotland.webp";
+import Spain from "./flag/Spain.jpg";
+import Poland from "./flag/Poland.jfif";
+import Hungary from "./flag/Hungary.jpg";
+import France from "./flag/11.jpg";
+import Portugal  from "./flag/Portugal.jpg";
+import Germany  from "./flag/Germany1.png";
 
 const Inputs = ({ userId }) => {
   // const time = new Date();
@@ -51,12 +57,12 @@ const Inputs = ({ userId }) => {
 
   const onSubmit = () => {
     const score = {
-      Sweden: FirstTeam,
-      Slovakia: secondTeam,
-      Croatia: ThirdTeam,
-      Czech: FourthTeam,
-      England: FifthTeam,
-      Scotland: SixTeam,
+      Hungary: FirstTeam,
+      France: secondTeam,
+      Portugal: ThirdTeam,
+      Germany: FourthTeam,
+      Spain : FifthTeam,
+      Poland: SixTeam,
     };
 
     fetch(
@@ -83,8 +89,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-              Sweden | سوئد{" "}
-              <img className={"image"} src={Sweden} alt="firstTeamLogo" />
+            Hungary | مجارستان{" "}
+              <img className={"image"} src={Hungary} alt="firstTeamLogo" />
             </label>
             <input
               type="number"
@@ -94,8 +100,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-              Slovakia | اسلواکی{" "}
-              <img className={"image"} src={Slovakia} alt="secondTeamLogo" />
+            France  | فرانسه {" "}
+              <img className={"image"} src={France} alt="secondTeamLogo" />
             </label>
             <input
               type="number"
@@ -111,8 +117,8 @@ const Inputs = ({ userId }) => {
         <div>
           <div className={"parent"}>
             <label className={"title"}>
-              Croatia | کرواسی{" "}
-              <img className={"image"} src={Croatia} alt="thirdTeamLogo" />
+             Portugal | پرتقال{" "}
+              <img className={"image"} src={Portugal} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -123,8 +129,8 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-              Czech republic | چک{" "}
-              <img className={"image"} src={Czech} alt="thirdTeamLogo" />
+           Germany | آلمان{" "}
+              <img className={"image"} src={Germany} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -140,8 +146,8 @@ const Inputs = ({ userId }) => {
         <div>
           <div className={"parent"}>
             <label className={"title"}>
-              England | انگلیس{" "}
-              <img className={"image"} src={England} alt="thirdTeamLogo" />
+             Spain | اسپانیا{" "}
+              <img className={"image"} src={Spain} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -152,8 +158,8 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-              Scotland | اسکاتلند{" "}
-              <img className={"image"} src={Scotland} alt="thirdTeamLogo" />
+             Poland | لهستان{" "}
+              <img className={"image"} src={Poland} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
