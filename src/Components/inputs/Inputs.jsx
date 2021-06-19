@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 
-// import wales from "./flag/wales.jpg";
-// import turkey from "./flag/turkey.jpg";
-// import italy from "./flag/italy.jpg";
-// import switzerland from "./flag/switzerland.jpg";
+import wales from "./flag/wales.jpg";
+import turkey from "./flag/turkey.jpg";
+import italy from "./flag/italy.jpg";
+import switzerland from "./flag/switzerland.jpg";
 
 // import ukrain from "./flag/ukrain.png";
 // import Macedonia from "./flag/Macedonia.jpg";
@@ -18,12 +18,12 @@ import "./style.css";
 // import Slovakia from "./flag/slovakia.webp";
 // import England from "./flag/England.webp";
 // import Scotland from "./flag/Scotland.webp";
-import Spain from "./flag/Spain.jpg";
-import Poland from "./flag/Poland.jfif";
-import Hungary from "./flag/Hungary.jpg";
-import France from "./flag/11.jpg";
-import Portugal  from "./flag/Portugal.jpg";
-import Germany  from "./flag/Germany1.png";
+// import Spain from "./flag/Spain.jpg";
+// import Poland from "./flag/Poland.jfif";
+// import Hungary from "./flag/Hungary.jpg";
+// import France from "./flag/11.jpg";
+// import Portugal  from "./flag/Portugal.jpg";
+// import Germany  from "./flag/Germany1.png";
 
 const Inputs = ({ userId }) => {
   // const time = new Date();
@@ -31,8 +31,8 @@ const Inputs = ({ userId }) => {
   const [secondTeam, setsecondTeam] = useState("");
   const [ThirdTeam, setThirdTeam] = useState("");
   const [FourthTeam, setFourthTeam] = useState("");
-  const [FifthTeam, setFifthTeam] = useState("");
-  const [SixTeam, setSixTeam] = useState("");
+  // const [FifthTeam, setFifthTeam] = useState("");
+  // const [SixTeam, setSixTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
   console.log(finalScore);
 
@@ -48,21 +48,21 @@ const Inputs = ({ userId }) => {
   const getValueOfFourthTeam = (e) => {
     setFourthTeam(e.target.value);
   };
-  const getValueOfFifthTeam = (e) => {
-    setFifthTeam(e.target.value);
-  };
-  const getValueOfSixTeam = (e) => {
-    setSixTeam(e.target.value);
-  };
+  // const getValueOfFifthTeam = (e) => {
+  //   setFifthTeam(e.target.value);
+  // };
+  // const getValueOfSixTeam = (e) => {
+  //   setSixTeam(e.target.value);
+  // };
 
   const onSubmit = () => {
     const score = {
-      Hungary: FirstTeam,
-      France: secondTeam,
-      Portugal: ThirdTeam,
-      Germany: FourthTeam,
-      Spain : FifthTeam,
-      Poland: SixTeam,
+      Italy: FirstTeam,
+      Wales: secondTeam,
+      Switzerland: ThirdTeam,
+      Turkey: FourthTeam,
+      // Spain : FifthTeam,
+      // Poland: SixTeam,
     };
 
     fetch(
@@ -89,8 +89,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-            Hungary | مجارستان{" "}
-              <img className={"image"} src={Hungary} alt="firstTeamLogo" />
+            Italy | ایتالیا{" "}
+              <img className={"image"} src={italy} alt="firstTeamLogo" />
             </label>
             <input
               type="number"
@@ -100,8 +100,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-            France  | فرانسه {" "}
-              <img className={"image"} src={France} alt="secondTeamLogo" />
+            wales  | ولز {" "}
+              <img className={"image"} src={wales} alt="secondTeamLogo" />
             </label>
             <input
               type="number"
@@ -117,8 +117,8 @@ const Inputs = ({ userId }) => {
         <div>
           <div className={"parent"}>
             <label className={"title"}>
-             Portugal | پرتقال{" "}
-              <img className={"image"} src={Portugal} alt="thirdTeamLogo" />
+            switzerland | سوییس{" "}
+              <img className={"image"} src={switzerland} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -129,8 +129,8 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-           Germany | آلمان{" "}
-              <img className={"image"} src={Germany} alt="thirdTeamLogo" />
+           Turkey | ترکیه{" "}
+              <img className={"image"} src={turkey} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -141,7 +141,7 @@ const Inputs = ({ userId }) => {
         </div>
         <hr />
       </>
-
+{/* 
       <>
         <div>
           <div className={"parent"}>
@@ -169,13 +169,14 @@ const Inputs = ({ userId }) => {
           </div>
         </div>
         <br />
-      </>
+      </> */}
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
-      FourthTeam === "" ||
-      FifthTeam === "" ||
-      SixTeam === "" ? (
+      FourthTeam === "" 
+      // FifthTeam === "" ||
+      // SixTeam === ""
+       ? (
         <button onClick={onSubmit} className={"btnDisable"} disabled>
           ثبت
         </button>
