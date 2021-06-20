@@ -85,6 +85,29 @@ const ShowResult = () => {
             </div>
           );
         })}
+          </div>
+          <h1 className={style.h1}>Fourth Match</h1>
+          <div className={style.container}>
+            {users.users.map((user) => {
+              if (user.description === null) {
+                return <p key={user.id} style={{color:"red"}}>{`${user.name} : هنوز پیشبینی نکرده`}</p>;
+              }
+              const natije = JSON.parse(user.description);
+              const keys = Object.keys(natije);
+              const value = Object.values(natije);
+    
+              return (
+                <div key={user.id} className={style.personContainer}>
+                  <div className={style.divName} key={user.id}>{user.name}</div>
+                  <div
+                    className={style.firstTeamDiv}
+                  >{`${keys[6]} : ${value[6]}`}</div>
+                  <div
+                    className={style.secondTeamDiv}
+                  >{`${keys[7]} : ${value[7]}`}</div>
+                </div>
+              );
+            })}
       </div>
       ;
     </div>
