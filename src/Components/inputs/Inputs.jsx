@@ -8,7 +8,7 @@ import "./style.css";
 
 import ukrain from "./flag/ukrain.png";
 import Macedonia from "./flag/Macedonia.jpg";
-// import Denmark from "./flag/Denmark.jpg";
+import Denmark from "./flag/Denmark.jpg";
 import Belgium from "./flag/Belgium.jpg";
 import Netherlands from "./flag/Netherlands.jpg";
 import Austria from "./flag/Austria.jpg";
@@ -189,7 +189,7 @@ const Inputs = ({ userId }) => {
           <div className={"parent"}>
             <label className={"title"}>
               Denmark | دانمارک{" "}
-              <img className={"image"} src={Belgium} alt="thirdTeamLogo" />
+              <img className={"image"} src={Denmark} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
