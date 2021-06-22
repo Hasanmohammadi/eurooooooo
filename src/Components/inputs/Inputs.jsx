@@ -200,7 +200,7 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-            France | روسیه{" "}
+            France | فرانسه{" "}
               <img className={"image"} src={France} alt="thirdTeamLogo" />
             </label>
             <input
