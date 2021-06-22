@@ -225,7 +225,8 @@ const Inputs = ({ userId }) => {
           ثبت
         </button>
       ) : (
-        <button onClick={onSubmit} className={"btn"}>
+        <button onClick={onSubmit} className={"btn"}> 
+        
           ثبت
         </button>
       )}
