@@ -221,7 +221,7 @@ const Inputs = ({ userId }) => {
         SixTeam === "" ||
         sevenTeam === "" ||
         eightTeam === "" ?
-        <button onClick={onSubmit} className={"btnDisable"} disabled>
+        (<button onClick={onSubmit} className={"btnDisable"} disabled>
           ثبت
         </button>
       ) : (
