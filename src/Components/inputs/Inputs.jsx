@@ -216,11 +216,11 @@ const Inputs = ({ userId }) => {
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
-      FourthTeam === "" ? (
-        // FifthTeam === "" ||
-        // SixTeam === "" ||
-        // sevenTeam === "" ||
-        // eightTeam === "" ?
+      FourthTeam === "" ||
+        FifthTeam === "" ||
+        SixTeam === "" ||
+        sevenTeam === "" ||
+        eightTeam === "" ?
         <button onClick={onSubmit} className={"btnDisable"} disabled>
           ثبت
         </button>
