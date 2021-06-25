@@ -5,12 +5,17 @@ import Inputs from './Components/inputs/Inputs';
 import ShowResult from './Components/ShowResult';
 import Table from './Components/table/Table';
 import convertId from './convert';
+import * as React from "react";
+
 
 function App() {
   const [userOn, setUserOn] = useState(0)
   const [userId, setUserId] = useState(0)
   const [userName, setUserName] = useState("")
   console.log(userName);
+
+  const REACT_VERSION = React.version;
+  console.log(REACT_VERSION);
 
   const setUserIdFn = (id) => {
     setUserId(id)

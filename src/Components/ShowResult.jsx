@@ -63,7 +63,7 @@ const ShowResult = () => {
           );
         })}
       </div>
-      <h1 className={style.h1}>Third Match</h1>
+      {/* <h1 className={style.h1}>Third Match</h1>
       <div className={style.container}>
         {users.users.map((user) => {
           if (user.description === null) {
@@ -108,7 +108,7 @@ const ShowResult = () => {
                 </div>
               );
             })}
-      </div>
+      </div> */}
       ;
     </div>
   );

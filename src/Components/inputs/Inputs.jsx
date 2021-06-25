@@ -1,30 +1,30 @@
 import { useState } from "react";
 import "./style.css";
 
-// import wales from "./flag/wales.jpg";
+import wales from "./flag/wales.jpg";
 // import turkey from "./flag/turkey.jpg";
-// import italy from "./flag/italy.jpg";
+import italy from "./flag/italy.jpg";
 // import switzerland from "./flag/switzerland.jpg";
 
 // import ukrain from "./flag/ukrain.png";
 // import Macedonia from "./flag/Macedonia.jpg";
-// import Denmark from "./flag/Denmark.jpg";
+import Denmark from "./flag/Denmark.jpg";
 // import Belgium from "./flag/Belgium.jpg";
 // import Netherlands from "./flag/Netherlands.jpg";
-// import Austria from "./flag/Austria.jpg";
+import Austria from "./flag/Austria.jpg";
 // import Croatia from "./flag/Croatia.jpg";
 // import Czech from "./flag/Czech.jpg";
-import Sweden from "./flag/Sweden.webp";
-import Slovakia from "./flag/slovakia.webp";
+// import Sweden from "./flag/Sweden.webp";
+// import Slovakia from "./flag/slovakia.webp";
 // import England from "./flag/England.webp";
 // import Finland from "./flag/Finland.webp";
 // import Scotland from "./flag/Scotland.webp";
-import Spain from "./flag/Spain.jpg";
-import Poland from "./flag/Poland.jfif";
-import Hungary from "./flag/Hungary.jpg";
-import France from "./flag/11.jpg";
-import Portugal  from "./flag/Portugal.jpg";
-import Germany  from "./flag/Germany1.png";
+// import Spain from "./flag/Spain.jpg";
+// import Poland from "./flag/Poland.jfif";
+// import Hungary from "./flag/Hungary.jpg";
+// import France from "./flag/11.jpg";
+// import Portugal  from "./flag/Portugal.jpg";
+// import Germany  from "./flag/Germany1.png";
 // import Russia from "./flag/russia-flag.jpg";
 
 const Inputs = ({ userId }) => {
@@ -33,10 +33,10 @@ const Inputs = ({ userId }) => {
   const [secondTeam, setsecondTeam] = useState("");
   const [ThirdTeam, setThirdTeam] = useState("");
   const [FourthTeam, setFourthTeam] = useState("");
-  const [FifthTeam, setFifthTeam] = useState("");
-  const [SixTeam, setSixTeam] = useState("");
-  const [sevenTeam, setSevenTeam] = useState("");
-  const [eightTeam, setEightTeam] = useState("");
+  // const [FifthTeam, setFifthTeam] = useState("");
+  // const [SixTeam, setSixTeam] = useState("");
+  // const [sevenTeam, setSevenTeam] = useState("");
+  // const [eightTeam, setEightTeam] = useState("");
   const [finalScore, setfinalScore] = useState({});
   console.log(finalScore);
 
@@ -52,29 +52,29 @@ const Inputs = ({ userId }) => {
   const getValueOfFourthTeam = (e) => {
     setFourthTeam(e.target.value);
   };
-  const getValueOfFifthTeam = (e) => {
-    setFifthTeam(e.target.value);
-  };
-  const getValueOfSixTeam = (e) => {
-    setSixTeam(e.target.value);
-  };
-  const getValueOfSevenTeam = (e) => {
-    setSevenTeam(e.target.value);
-  };
-  const getValueOfEightTeam = (e) => {
-    setEightTeam(e.target.value);
-  };
+  // const getValueOfFifthTeam = (e) => {
+  //   setFifthTeam(e.target.value);
+  // };
+  // const getValueOfSixTeam = (e) => {
+  //   setSixTeam(e.target.value);
+  // };
+  // const getValueOfSevenTeam = (e) => {
+  //   setSevenTeam(e.target.value);
+  // };
+  // const getValueOfEightTeam = (e) => {
+  //   setEightTeam(e.target.value);
+  // };
 
   const onSubmit = () => {
     const score = {
-      Slovakia: FirstTeam,
-      Spain: secondTeam,
-      Sweden: ThirdTeam,
-      Poland: FourthTeam,
-      Germany: FifthTeam,
-      Hungary: SixTeam,
-      Portugal: sevenTeam,
-      France: eightTeam,
+      Wales: FirstTeam,
+      Denmark: secondTeam,
+      Italy: ThirdTeam,
+      Austria: FourthTeam,
+      // Germany: FifthTeam,
+      // Hungary: SixTeam,
+      // Portugal: sevenTeam,
+      // France: eightTeam,
     };
 
     fetch(
@@ -101,8 +101,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-            Slovakia | اسلواکی{" "}
-              <img className={"image"} src={Slovakia} alt="firstTeamLogo" />
+            Wales | ولز{" "}
+              <img className={"image"} src={wales} alt="firstTeamLogo" />
             </label>
             <input
               type="number"
@@ -112,8 +112,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-            Spain | اسپانیا{" "}
-              <img className={"image"} src={Spain} alt="secondTeamLogo" />
+            Denmark | دانمارک{" "}
+              <img className={"image"} src={Denmark} alt="secondTeamLogo" />
             </label>
             <input
               type="number"
@@ -129,8 +129,8 @@ const Inputs = ({ userId }) => {
         <div>
           <div className={"parent"}>
             <label className={"title"}>
-            Sweden | سوئد{" "}
-              <img className={"image"} src={Sweden} alt="thirdTeamLogo" />
+            Italy | ایتالیا{" "}
+              <img className={"image"} src={italy} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -141,8 +141,8 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-            Poland | لهستان{" "}
-              <img className={"image"} src={Poland} alt="thirdTeamLogo" />
+            Austria | اتریش{" "}
+              <img className={"image"} src={Austria} alt="thirdTeamLogo" />
             </label>
             <input
               type="number"
@@ -153,7 +153,7 @@ const Inputs = ({ userId }) => {
         </div>
         <hr />
       </>
-      
+{/*       
       <>
         <div>
           <div className={"parent"}>
@@ -210,17 +210,18 @@ const Inputs = ({ userId }) => {
             />
           </div>
         </div>
-        <br />
-      </>
+        <br /> */}
+      {/* </> */}
 
       {FirstTeam === "" ||
       secondTeam === "" ||
       ThirdTeam === "" ||
-      FourthTeam === "" ||
-        FifthTeam === "" ||
-        SixTeam === "" ||
-        sevenTeam === "" ||
-        eightTeam === "" ?
+      FourthTeam === "" 
+        // FifthTeam === "" ||
+        // SixTeam === "" ||
+        // sevenTeam === "" ||
+        // eightTeam === "" 
+        ?
         (<button onClick={onSubmit} className={"btnDisable"} disabled>
           ثبت
         </button>
