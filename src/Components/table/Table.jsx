@@ -28,8 +28,7 @@ const Table = ({ userOn, userId }) => {
     alert(`
     ${user.name}:
     ${keys[0]}: ${value[0]} , ${keys[1]}: ${value[1]} 
-    ${keys[2]}: ${value[2]} , ${keys[3]}: ${value[3]} 
-    ${keys[4]}: ${value[4]} , ${keys[5]}: ${value[5]} `);
+    ${keys[2]}: ${value[2]} , ${keys[3]}: ${value[3]}`);
   };
 
   return (
