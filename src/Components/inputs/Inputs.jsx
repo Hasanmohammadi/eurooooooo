@@ -105,7 +105,7 @@ const Inputs = ({ userId }) => {
               <img className={"image"} src={wales} alt="firstTeamLogo" />
             </label>
             <input
-              type="number"
+              
               onChange={getValueOfFirstTeam}
               className={"input"}
             />
@@ -116,7 +116,7 @@ const Inputs = ({ userId }) => {
               <img className={"image"} src={Denmark} alt="secondTeamLogo" />
             </label>
             <input
-              type="number"
+              
               onChange={getValueOfSecondTeam}
               className={"input"}
             />
@@ -133,7 +133,7 @@ const Inputs = ({ userId }) => {
               <img className={"image"} src={italy} alt="thirdTeamLogo" />
             </label>
             <input
-              type="number"
+              
               onChange={getValueOfThirdTeam}
               className={"input"}
             />
@@ -145,7 +145,7 @@ const Inputs = ({ userId }) => {
               <img className={"image"} src={Austria} alt="thirdTeamLogo" />
             </label>
             <input
-              type="number"
+              
               onChange={getValueOfFourthTeam}
               className={"input"}
             />
