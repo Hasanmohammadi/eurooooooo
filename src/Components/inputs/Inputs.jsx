@@ -3,18 +3,16 @@ import "./style.css";
 
 
 // import italy from "./flag/italy.jpg";
-import switzerland from "./flag/switzerland.jpg";
+// import switzerland from "./flag/switzerland.jpg";
 
-// import ukrain from "./flag/ukrain.png";
+import Ukrain from "./flag/ukrain.png";
 // import Denmark from "./flag/Denmark.jpg";
 // import Belgium from "./flag/Belgium.jpg";
-import Croatia from "./flag/Croatia.jpg";
 // import Czech from "./flag/Czech.jpg";
-// import Sweden from "./flag/Sweden.webp";
-// import England from "./flag/England.webp";
-import Spain from "./flag/Spain.jpg";
-import France from "./flag/11.jpg";
-// import Germany  from "./flag/Germany1.png";
+import Sweden from "./flag/Sweden.webp";
+import England from "./flag/England.webp";
+// import Spain from "./flag/Spain.jpg";
+import Germany  from "./flag/Germany1.png";
 
 const Inputs = ({ userId }) => {
   // const time = new Date();
@@ -56,10 +54,10 @@ const Inputs = ({ userId }) => {
 
   const onSubmit = () => {
     const score = {
-      Croatia: FirstTeam,
-      Spain: secondTeam,
-      switzerland: ThirdTeam,
-      France: FourthTeam,
+      England: FirstTeam,
+      Germany: secondTeam,
+      Sweden: ThirdTeam,
+      Ukrain: FourthTeam,
       // Germany: FifthTeam,
       // Hungary: SixTeam,
       // Portugal: sevenTeam,
@@ -90,8 +88,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-            Croatia | کرواسی{" "}
-              <img className={"image"} src={Croatia} alt="firstTeamLogo" />
+            England | انگلیس{" "}
+              <img className={"image"} src={England} alt="firstTeamLogo" />
             </label>
             <input
               
@@ -101,8 +99,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-            Spain | اسپانیا{" "}
-              <img className={"image"} src={Spain} alt="secondTeamLogo" />
+            Germany | آلمان{" "}
+              <img className={"image"} src={Germany} alt="secondTeamLogo" />
             </label>
             <input
               
@@ -118,8 +116,8 @@ const Inputs = ({ userId }) => {
         <div>
           <div className={"parent"}>
             <label className={"title"}>
-            Switzerland | سوئیس{" "}
-              <img className={"image"} src={switzerland} alt="thirdTeamLogo" />
+            Sweden | سوئد{" "}
+              <img className={"image"} src={Sweden} alt="thirdTeamLogo" />
             </label>
             <input
               
@@ -130,8 +128,8 @@ const Inputs = ({ userId }) => {
 
           <div className={"parent"}>
             <label className={"title"}>
-            France | فرانسه{" "}
-              <img className={"image"} src={France} alt="thirdTeamLogo" />
+            Ukrain | اوکراین{" "}
+              <img className={"image"} src={Ukrain} alt="thirdTeamLogo" />
             </label>
             <input
               
