@@ -124,7 +124,8 @@ const Inputs = ({ userId }) => {
             />
           </div>
 
-          <div className={"parent"}>
+          <div className={"parent"}> 
+          
             <label className={"title"}>
             Belgium | بلژیک{" "}
               <img className={"image"} src={Belgium} alt="thirdTeamLogo" />
