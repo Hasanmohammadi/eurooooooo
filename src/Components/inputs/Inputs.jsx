@@ -2,20 +2,18 @@ import { useState } from "react";
 import "./style.css";
 
 
-// import italy from "./flag/italy.jpg";
+import italy from "./flag/italy.jpg";
 
-import Ukrain from "./flag/ukrain.png";
-import Denmark from "./flag/Denmark.jpg";
-import Czech from "./flag/Czech.jpg";
-import England from "./flag/England.webp";
-// import Spain from "./flag/Spain.jpg";
+// import Denmark from "./flag/Denmark.jpg";
+// import England from "./flag/England.webp";
+import Spain from "./flag/Spain.jpg";
 
 const Inputs = ({ userId }) => {
   // const time = new Date();
   const [FirstTeam, setFirstTeam] = useState("");
   const [secondTeam, setsecondTeam] = useState("");
-  const [ThirdTeam, setThirdTeam] = useState("");
-  const [FourthTeam, setFourthTeam] = useState("");
+  // const [ThirdTeam, setThirdTeam] = useState("");
+  // const [FourthTeam, setFourthTeam] = useState("");
   // const [FifthTeam, setFifthTeam] = useState("");
   // const [SixTeam, setSixTeam] = useState("");
   // const [sevenTeam, setSevenTeam] = useState("");
@@ -29,12 +27,12 @@ const Inputs = ({ userId }) => {
   const getValueOfSecondTeam = (e) => {
     setsecondTeam(e.target.value);
   };
-  const getValueOfThirdTeam = (e) => {
-    setThirdTeam(e.target.value);
-  };
-  const getValueOfFourthTeam = (e) => {
-    setFourthTeam(e.target.value);
-  };
+  // const getValueOfThirdTeam = (e) => {
+  //   setThirdTeam(e.target.value);
+  // };
+  // const getValueOfFourthTeam = (e) => {
+  //   setFourthTeam(e.target.value);
+  // };
   // const getValueOfFifthTeam = (e) => {
   //   setFifthTeam(e.target.value);
   // };
@@ -50,10 +48,10 @@ const Inputs = ({ userId }) => {
 
   const onSubmit = () => {
     const score = {
-      Ukrain: FirstTeam,
-      England: secondTeam,
-      Czech: ThirdTeam,
-      Denmark: FourthTeam,
+      Italy: FirstTeam,
+      Spain: secondTeam,
+      // Czech: ThirdTeam,
+      // Denmark: FourthTeam,
       // Germany: FifthTeam,
       // Hungary: SixTeam,
       // Portugal: sevenTeam,
@@ -84,8 +82,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-            Ukrain | اکراین{" "}
-              <img className={"image"} src={Ukrain} alt="firstTeamLogo" />
+            Italy | ایتالیا{" "}
+              <img className={"image"} src={italy} alt="firstTeamLogo" />
             </label>
             <input
               
@@ -95,8 +93,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-            England | انگلیس{" "}
-              <img className={"image"} src={England} alt="secondTeamLogo" />
+            Spain | اسپانیا{" "}
+              <img className={"image"} src={Spain} alt="secondTeamLogo" />
             </label>
             <input
               
@@ -107,7 +105,7 @@ const Inputs = ({ userId }) => {
         </div>
         <hr />
       </>
-
+{/* 
       <>
         <div>
           <div className={"parent"}>
@@ -136,7 +134,7 @@ const Inputs = ({ userId }) => {
           </div>
         </div>
         <hr />
-      </>
+      </> */}
 {/*       
       <>
         <div>
@@ -198,9 +196,9 @@ const Inputs = ({ userId }) => {
       {/* </> */}
 
       {FirstTeam === "" ||
-      secondTeam === "" ||
-      ThirdTeam === "" ||
-      FourthTeam === "" 
+      secondTeam === "" 
+      // ThirdTeam === "" ||
+      // FourthTeam === "" 
         // FifthTeam === "" ||
         // SixTeam === "" ||
         // sevenTeam === "" ||
