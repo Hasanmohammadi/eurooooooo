@@ -2,11 +2,10 @@ import { useState } from "react";
 import "./style.css";
 
 
-import italy from "./flag/italy.jpg";
+// import italy from "./flag/italy.jpg";
 
-// import Denmark from "./flag/Denmark.jpg";
-// import England from "./flag/England.webp";
-import Spain from "./flag/Spain.jpg";
+import Denmark from "./flag/Denmark.jpg";
+import England from "./flag/England.webp";
 
 const Inputs = ({ userId }) => {
   // const time = new Date();
@@ -48,8 +47,8 @@ const Inputs = ({ userId }) => {
 
   const onSubmit = () => {
     const score = {
-      Italy: FirstTeam,
-      Spain: secondTeam,
+      England: FirstTeam,
+      Denmark: secondTeam,
       // Czech: ThirdTeam,
       // Denmark: FourthTeam,
       // Germany: FifthTeam,
@@ -82,8 +81,8 @@ const Inputs = ({ userId }) => {
         >
           <div className={"parent"}>
             <label className={"title"}>
-            Italy | ایتالیا{" "}
-              <img className={"image"} src={italy} alt="firstTeamLogo" />
+            England | انگلیس{" "}
+              <img className={"image"} src={England} alt="firstTeamLogo" />
             </label>
             <input
               
@@ -93,8 +92,8 @@ const Inputs = ({ userId }) => {
           </div>
           <div className={"parent"}>
             <label className={"title"}>
-            Spain | اسپانیا{" "}
-              <img className={"image"} src={Spain} alt="secondTeamLogo" />
+            Denmark | دانمارک{" "}
+              <img className={"image"} src={Denmark} alt="secondTeamLogo" />
             </label>
             <input
               
