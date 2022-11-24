@@ -41,17 +41,16 @@
   margin: auto;
   text-align: center;
   color: darkblue;
-  background-image: url("./spt2150.jpg");
+  background-image: url("./spt2150.jpeg");
   height: 100vh;
-  background-position: top;
+  background-repeat: round;
   margin: -21px 0 0 0;
-
 }
 
 .refreshBtn {
   width: 11em;
   height: 2em;
-  background:repeating-radial-gradient(black, transparent 100px);
+  background: repeating-radial-gradient(black, transparent 100px);
   color: whitesmoke;
   font-weight: bold;
   border: 1px solid deepskyblue;

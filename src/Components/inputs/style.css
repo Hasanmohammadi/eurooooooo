@@ -19,22 +19,19 @@
 
 .btn {
   width: 10em;
-  height: 1.4em;
-  background: cadetblue;
-  border: deepskyblue 1px solid;
-  color: #091464;
+  background: #102c2d;
+  border: #102c2d 1px solid;
+  color: wheat;
   font-size: 19px;
-  border-radius: 1em;
+  border-radius: 12px;
+  padding: 6px 0;
 }
 .btnDisable {
   width: 10em;
   height: 1.4em;
-
   font-size: 19px;
-  border-radius: 1em;
+  border-radius: 12px;
   background: unset;
-
-
 }
 
 .div {
@@ -49,7 +46,6 @@
   grid-column-gap: 10px;
   grid-row-gap: 0px;
   text-align: end;
-
 }
 
 .image {
